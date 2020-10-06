@@ -1,0 +1,103 @@
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333333
+}
+
+h1 {
+    color: #eee;
+    font-size: 28px;
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+#main-bio, #contact-info, #bio-image {
+    float: left;
+}
+
+#bio-image {
+    width: 200px;
+    margin-right: 20px;
+}
+
+#main-bio {
+    width: 70%;
+    line-height: 1.6;
+}
+
+#contact-info {
+    width: 30%;
+    line-height: 1.6;
+}
+
+a {
+    color: red;
+}
+
+img {
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #73AD21;
+}
+
+.list {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px; 
+    width: 300px;
+    height: 75px;
+    background-color: rgba(177, 169, 110, .4);    
+}
+
+.page-back {
+    height: 100vh;
+    background-image: url("forest.jpg");
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.page-back:after {
+    content: "";
+    background-image: url("paper_1.png");
+    height: 300%;
+    left: -50%;
+    top: -120%;
+    width: 300%;
+    opacity: 0.35;
+    position: fixed;
+    animation: grain 8s steps(10) infinite;
+    z-index: -2;
+}
+
+@keyframes grain {
+    0%, 100% { transform:translate(0, 0) }
+    10% { transform:translate(-5%, -10%) }
+    20% { transform:translate(-15%, 5%) }
+    30% { transform:translate(7%, -25%) }
+    40% { transform:translate(-5%, 25%) }
+    50% { transform:translate(-15%, 10%) }
+    60% { transform:translate(15%, 0%) }
+    70% { transform:translate(0%, 15%) }
+    80% { transform:translate(3%, 35%) }
+    90% { transform:translate(-10%, 10%) }
+}
+
+#game_style {
+    visibility: hidden;
+}
